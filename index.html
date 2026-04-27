@@ -11,18 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style>
-    /* Impede que a sessão de projetos force a largura */
-    #three {
-        overflow-x: hidden !important;
-    }
+		<style>
+			#three {
+        		overflow-x: hidden !important;
+    		}
 
-    /* Garante que as imagens não ultrapassem o limite das colunas */
-    .image img {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-	</style>
+    		#three .image img {
+        		object-fit: cover !important;
+        		object-position: center center !important;
+        		height: 100% !important;
+        		width: 100% !important;
+    		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -48,9 +48,9 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Olá, seja Bem-vindo(a) ao meu portifólio!</h1>
-							<p><span class="image left"><img src="images/ds.png" style="float: left; margin-right: 15px; width: 200px;" width="200" height="200" alt="" /></span>Este é o meu ecossistema de dados. Aqui documento minha transição da Ciência do Esporte para a Ciência de Dados, apresentando minhas 
+							<p><span class="image left"><img src="images/ds.png" style="float: left; margin-right: 15px; width: 200px;" width="200" height="200" alt="" /></span>Este é o meu portifolio de projetos de dados. Aqui documento meus projetos em Análise e Ciência de Dados, apresentando minhas 
 								habilidades em resolver problemas de negócio utilizando ferramentas e conceitos transformando dados em insights.
-								Você encontrará estudos de caso reais, desde a extração de dados complexos (PDFs/Scraping) até a criação de modelos preditivos e dashboards estratégicos</p>
+								Você encontrará estudos de caso reais, desde a extração de dados complexos até a criação de modelos preditivos e dashboards estratégicos</p>
 						</div>
 					</section>
 
@@ -61,8 +61,8 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Sobre Mim (About Me)</h2>
-									<p>Meu nome é <b>Guilherme Grandim</b>, sou um profissional com sólida experiência em ciência aplicada ao esporte de alto rendimento, agora aplicando esse rigor analítico ao universo dos dados.
-										Atualmente, dedico-me ao domínio do ecossistema Python e SQL. Meu foco é utilizar métodos de gestão de conhecimento e organização de tarefas para documentação e resolução dos problemas de negócios.</p>
+									<p>Meu nome é <b>Guilherme Grandim</b>, sou um profissional com sólida experiência em ciência aplicada ao esporte de alto rendimento utilizando dados para tomada de decisão e utilizando esse rigor analítico do universo dos dados.
+										Atualmente, tenho me dedicado as ferramentas Python e SQL e desenvolvimento de métodos na gestão de conhecimento e organização de tarefas para documentação e resolução dos problemas de negócios.</p>
 								</div>
 							</div>
 						</section>
@@ -71,13 +71,14 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Experiências</h2>
-									<p>Desenvolvimento de projetos de portfólio baseados em dados reais de mercado (FIFA/Esportes) e 
-										freelancers de Business Intelligence, focados em ETL e entrega de KPIs para o Departamento Médico. Minha atuação na área da saúde/performance me conferiu 
+									<p>Desenvolvimento de projetos de portfólio baseados em dados reais de mercado e 
+										freelancers de Business Intelligence, focados em ETL e entrega de KPIs. Minha atuação na área da saúde/performance me conferiu 
 										uma capacidade crítica de comunicação com stakeholders e a habilidade de traduzir termos técnicos para uma linguagem de negócios clara, mantendo a ética e o 
 										rigor científico sob pressão</p>
 								</div>
 							</div>
 						</section>
+					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
@@ -124,32 +125,64 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style2 fade-up">
-        					<a href="#" class="image"><img src="images/projeto01.png" alt="" data-position="center center" /></a>
-        					<div class="content">
-            					<div class="inner">
-                					<h2>Projeto 01 - Curry Company - Visão Estratégica de Negócio</h2>
-                					<p>Nesse projeto contrui uma pagina no Streamlit com dashboards que apresentam visão estratégica de negocios relacionadas a Curry Company Delivery</p>
-                					<ul class="actions">
-                    	<li><a href="https://github.com/guigrandim/curry_company_project" class="button">Ver no GitHub</a></li>
-                		</ul>
-            			</div>
-        				</div>
-    					</section>
-						
+					<section id="three" class="wrapper style2 spotlights">
+
 						<section>
-                            <a href="#" class="image"><img src="images/projeto02.png" width="100" height="100" alt="" data-position="center center" /></a>
-                            <div class="content">
-                                <div class="inner">
-                                    <h2>Projeto 02 </h2>
-                                    <p>Em Construção</p>
-                                    <ul class="actions">
-                                        <li><a href="https://github.com/guigrandim" class="button">Ver no GitHub</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
+							<a href="#" class="image"><img src="images/projeto01.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Desenvolvimento de um Painel Gerencial para Negócio com Streamlit</h2>
+									<p>Nesse projeto utilizando programação em python, manipulação de dados, pensamento estratégico e lógica de negócio, 
+										junto com ferramentas de desenvolvimento web como Streamlit e Github foi desenvolvido indicadores de desempenho 
+										para analise da empresa Curry Company. O painel interativo mostra KPIs da empresa, 
+										entregadores e restaurantes sendo detectado um aumento no tempo entrega em diferentes situações (clima e trafego) 
+										devido a deterioração da frota de entrega</p>
+
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python</li>
+										<li>Jupyter Lab</li>
+										<li>Terminal</li>
+										<li>Streamlit e Streamlit Cloud</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/curry_company_project" class="button">Ver no GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="#" class="image"><img src="images/projeto02.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Painel Estratégico de Negócios para Companhia de Videogame</h2>
+									<p>Neste projeto, apliquei programação em Python, manipulação de dados e pensamento estratégico para desenvolver uma solução de inteligência 
+										de mercado para a BrasCo. Gaming Ltd. Utilizando Streamlit e GitHub, estruturei um dashboard interativo focado na otimização de capital 
+										dentro do setor global de games, mapeando KPIs de eficiência. A análise permitiu identificar que 37% do market share concentra-se 
+										na América do Norte e que parcerias com a Microsoft oferecem o melhor retorno sobre investimento ($0.32M por ponto).
+										Tambem foram detectadas janelas de oportunidade no 3º ano de vida dos consoles, fornecendo uma base estatística para mitigar 
+										riscos e direcionar o lançamento de novos títulos com precisão comercial.</p>
+
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python</li>
+										<li>Jupyter Lab</li>
+										<li>Terminal</li>
+										<li>Streamlit e Streamlit Cloud</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/video_games_sales" class="button">Ver no GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+					</section>
 
 				<!-- Four -->
 					<section id="four" class="wrapper style1 fade-up">
@@ -186,11 +219,12 @@
 									</ul>
 								</section>
 								<section>
-									<img src="images/agradecimento.png" width="400" height="400" alt="">
+									<img src="images/agradecimento.png" alt="" style="max-width: 100%; height: auto;">
 								</section>
 							</div>
 						</div>
 					</section>
+
 			</div>
 
 		<!-- Footer -->
