@@ -12,31 +12,56 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			#three {
-        		overflow-x: hidden !important;
-    		}
+			/* Borda branca separando seções principais */
+			#wrapper > section {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+			}
+			#wrapper > section:last-of-type {
+				border-bottom: none;
+			}
 
-    		#three .image img {
-        		object-fit: cover !important;
-        		object-position: center center !important;
-        		height: 100% !important;
-        		width: 100% !important;
-    		}
+			/* Borda branca entre cards de Sobre Mim */
+			#one > section {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+			}
+			#one > section:last-of-type {
+				border-bottom: none;
+			}
 
+			/* Borda branca entre cards de Projetos */
+			#three > section {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+			}
+			#three > section:last-of-type {
+				border-bottom: none;
+			}
+
+			/* Imagens padronizadas nos spotlights */
+			#one .image img,
+			#three .image img,
+			#one section .image img,
 			#three section .image img {
-        		object-fit: cover !important;
-        		object-position: center center !important;
-        		height: 100% !important;
-        		width: 100% !important;
-    		}
+				object-fit: cover !important;
+				object-position: center center !important;
+				height: 100% !important;
+				width: 100% !important;
+			}
 
-			#three p {
-        		font-size: 0.85em !important;
-    		}
-
+			/* Texto padronizado nos projetos */
+			#three p,
 			#three li {
-        		font-size: 0.85em !important;
-    		}
+				font-size: 0.85em !important;
+			}
+
+			/* Overflow nos projetos */
+			#three {
+				overflow-x: hidden !important;
+			}
+
+			/* Último card de habilidades sozinho na linha ocupa largura total */
+			#two .features section:last-child:nth-child(odd) {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -76,8 +101,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Sobre Mim (About Me)</h2>
-									<p>Meu nome é <b>Guilherme Grandim</b>, sou um profissional com sólida experiência em ciência aplicada ao esporte de alto rendimento utilizando dados para tomada de decisão e utilizando esse rigor analítico do universo dos dados.
-										Atualmente, tenho me dedicado as ferramentas Python e SQL e desenvolvimento de métodos na gestão de conhecimento e organização de tarefas para documentação e resolução dos problemas de negócios.</p>
+									<p>Sou <b>Guilherme Grandim</b>, Data Analyst e Data Scientist com <b>Mestrado pela UNICAMP</b> e <b>MBA em Data Science pela USP</b>. Durante minha carreira o método científico me fez ganhar experiencia com relação ao que o número pode representar criando hipoteses analíticas antes de tirar conclusões</p>
+									<p>Trabalho com <b>Python</b>, <b>SQL</b> e <b>Scikit-Learn</b> desde a limpeza de dados até modelos preditivos. Os resultado são apresentados em dashboard no <b>Power BI</b>, <b>Looker Studio</b> ou <b>Streamlit</b>, mas sempre começando com uma pergunta de negócio para entendimento do problema</p>
+									<p>Tambem tenho experiência com projetos ponta a ponta utilizando o <b>Claude Code</b> e agentes de IA no dia a dia de análise.</p>
 								</div>
 							</div>
 						</section>
@@ -86,10 +112,8 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Experiências</h2>
-									<p>Desenvolvimento de projetos de portfólio baseados em dados reais de mercado e 
-										freelancers de Business Intelligence, focados em ETL e entrega de KPIs. Minha atuação na área da saúde/performance me conferiu 
-										uma capacidade crítica de comunicação com stakeholders e a habilidade de traduzir termos técnicos para uma linguagem de negócios clara, mantendo a ética e o 
-										rigor científico sob pressão</p>
+									<p>Trabalhei por anos com dados no esporte de alto rendimento em clubes como <b>Corinthians, Cruzeiro e Vasco</b>. Nesse ambiente aprendi a lidar com dado incompleto, prazo curto e stakeholder que precisam de respostas assertivas</p>
+									<p>Hoje trabalho com projetos de portfólio em dados reais e construção de soluções de <b>Business Intelligence</b>, onde o foco é entregar análise que de fato oriente uma decisão trasformando dados técnicos em liguagem acessivel e KPIs.</p>
 								</div>
 							</div>
 						</section>
@@ -118,7 +142,7 @@
 										<li>Estatística descritiva (localização, dispersão, assimetria, kurtosis, densidade)</li>
 										<li>Algoritmos de Regressão, Classificação, Clusterização</li>
 										<li>Métricas de performance dos algoritmos (RMSE, MAE, MAPE, Confusion Matrix, Precision, Recall, ROC Curve, Lift Curve, Silhouette Score, R2 Score)</li>
-										<li>Pacotes de Machine Learning: Sklearn </li>
+										<li>Scikit-Learn: Pipelines, ColumnTransformer, Preprocessing (StandardScaler, OneHotEncoder), Feature Selection (RFE, SelectFromModel), Model Selection (GridSearchCV, StratifiedKFold, Cross Validation)</li>
 									</ul>
 								</section>
 								<section>
@@ -137,6 +161,19 @@
 										<li>Git e Github</li>
 										<li>Streamlit Cloud</li>
 										<li>Sqlite3 Database</li>
+										<li>Render (deploy de aplicações Flask/APIs)</li>
+										<li>Flask (API REST para modelos de ML)</li>
+									</ul>
+								</section>
+								<section>
+									<span class="icon solid major fa-robot"></span>
+									<h4>Inteligência Artificial Generativa (GenAI)</h4>
+									<ul>
+										<li>Claude Code como co-analista e agente autônomo de análise de dados</li>
+										<li>Integração com MCPs (Model Context Protocol) para automação de workflows</li>
+										<li>Prompt Engineering aplicado a pipelines de dados e geração de código</li>
+										<li>Workflows agênticos com Hooks e Subagentes</li>
+										<li>Uso de LLMs para apoio à tomada de decisão analítica e documentação técnica</li>
 									</ul>
 								</section>
 							</div>
@@ -145,6 +182,29 @@
 
 				<!-- Three -->
 					<section id="three" class="wrapper style2 spotlights">
+
+						<section>
+							<a href="#" class="image"><img src="images/projeto05.png" alt="Previsão de vendas Rossmann Store Sales" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Previsão de Vendas para Rede de Farmácias com XGBoost e Bot no Telegram</h2>
+									<p>Neste projeto, desenvolvi um modelo de machine learning para prever o faturamento das próximas 6 semanas de cada uma das 1.115 lojas da rede Rossmann. O problema foi trazido pelo CFO da empresa, que precisava substituir estimativas manuais e inconsistentes dos gerentes por uma base estatística confiável para planejar um orçamento centralizado de reformas. Seguindo a metodologia CRISP-DS em 10 ciclos, o pipeline contemplou feature engineering com derivação de variáveis temporais e de competição, EDA com validação de 12 hipóteses de negócio, preparação com encoding cíclico (sin/cos), RobustScaler e Boruta para seleção de features. O XGBoost foi escolhido sobre o Random Forest por apresentar menor variância no cross-validation temporal e modelo serializado ~10x menor, crítico para a API com timeout restrito. O modelo final atingiu MAPE de ~13% e a previsão consolidada da rede ficou entre R$ 283,5 MM e R$ 285,2 MM para as 6 semanas. A solução foi colocada em produção com uma API Flask no Heroku e um bot no Telegram que permite ao CFO consultar a previsão de qualquer loja em segundos, digitando apenas o número da unidade.</p>
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python (pandas, numpy, scikit-learn, XGBoost, Flask)</li>
+										<li>Boruta (seleção de features)</li>
+										<li>Jupyter Lab</li>
+										<li>Heroku (deploy da API e do bot)</li>
+										<li>Telegram Bot API</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/rossmann_store_sales" class="button">Ver no GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
 						<section>
 							<a href="#" class="image"><img src="images/projeto02.png" alt="Dashboard de vendas para empresa de videogame" data-position="center center" /></a>
