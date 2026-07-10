@@ -88,7 +88,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>👋 Olá, seja Bem-vindo(a) ao meu portifólio!</h1>
-							<p>Este é o meu portfólio de projetos de dados. Aqui documento meus projetos em Análise e Ciência de Dados, apresentando minhas
+																			<p>Este é o meu portfólio de projetos de dados. Aqui documento meus projetos em Análise e Ciência de Dados, apresentando minhas
 								habilidades em resolver problemas de negócio utilizando ferramentas e conceitos transformando dados em insights.
 								Você encontrará estudos de caso reais, desde a extração de dados complexos até a criação de modelos preditivos e dashboards estratégicos</p>
 						</div>
@@ -182,6 +182,30 @@
 
 				<!-- Three -->
 					<section id="three" class="wrapper style2 spotlights">
+
+						<section>
+							<a href="#" class="image"><img src="images/projeto06.png" alt="Classificador de Síndrome Respiratória Aguda Grave (SRAG/COVID-19)" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Classificador de SRAG/COVID-19 com XGBoost e Deploy Serverless na AWS</h2>
+									<p>Neste projeto, desenvolvi um classificador multiclasse para Síndrome Respiratória Aguda Grave a partir dos dados epidemiológicos do SIVEP-Gripe (DATASUS), com engenharia de features de faixa etária, score de comorbidades, macrorregião, sazonalidade via seno/cosseno da semana epidemiológica e score vacinal. O modelo XGBoost, treinado com early stopping e pesos balanceados por classe, atingiu 68% de acurácia e F1-score ponderado de 0,67 no conjunto de teste. Diante da indisponibilidade de cota para endpoints do SageMaker, containerizei o modelo serializado em uma imagem Docker publicada no ECR e servida via AWS Lambda, consumida por um frontend em Streamlit publicado no ECS Fargate. Para manter o custo de infraestrutura próximo de zero, a arquitetura opera em modo scale-to-zero: o serviço ECS permanece com desiredCount=0 por padrão e é desligado automaticamente após 2 horas de uso via EventBridge. Também documentei de forma transparente uma limitação crítica do modelo: a feature mais preditiva, delta_uti, não possui documentação oficial no DATASUS, recomendando validação com os criadores do pipeline original antes de qualquer uso clínico.</p>
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python 3.11 (pandas, scikit-learn, XGBoost)</li>
+										<li>Streamlit</li>
+										<li>AWS Lambda (Docker e Amazon ECR)</li>
+										<li>Amazon ECS Fargate</li>
+										<li>Amazon Athena</li>
+										<li>AWS EventBridge</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/respiratory-diseases" class="button">Ver no GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
 						<section>
 							<a href="#" class="image"><img src="images/projeto05.png" alt="Previsão de vendas Rossmann Store Sales" data-position="center center" /></a>
@@ -350,4 +374,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-</html>
+</html>
