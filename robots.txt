@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guigrandim.github.io/portifolio_projetos/sitemap.xml
