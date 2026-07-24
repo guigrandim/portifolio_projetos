@@ -48,3 +48,9 @@
 #two .features section:last-child:nth-child(odd) {
 	width: 100%;
 }
+
+/* Imagem de agradecimento na seção de Contato */
+.contact-thanks-image {
+	max-width: 100%;
+	height: auto;
+}
