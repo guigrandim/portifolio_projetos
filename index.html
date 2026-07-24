@@ -48,9 +48,8 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>👋 Olá, seja Bem-vindo(a) ao meu portifólio!</h1>
-																			<p>Este é o meu portfólio de projetos de dados. Aqui documento meus projetos em Análise e Ciência de Dados, apresentando minhas
-								habilidades em resolver problemas de negócio utilizando ferramentas e conceitos transformando dados em insights.
-								Você encontrará estudos de caso reais, desde a extração de dados complexos até a criação de modelos preditivos e dashboards estratégicos</p>
+																			<p>Esse é o meu portfólio de projetos de dados, onde reúno os trabalhos que fiz em Análise e Ciência de Dados. Aqui você encontra
+								desde a extração de dados até a criação de modelos preditivos e dashboards, sempre partindo de um problema de negócio real.</p>
 						</div>
 					</section>
 
@@ -61,9 +60,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Sobre Mim (About Me)</h2>
-									<p>Sou <b>Guilherme Grandim</b>, Data Analyst e Data Scientist com <b>Mestrado pela UNICAMP</b> e <b>MBA em Data Science pela USP</b>. Durante minha carreira o método científico me fez ganhar experiencia com relação ao que o número pode representar criando hipoteses analíticas antes de tirar conclusões</p>
-									<p>Trabalho com <b>Python</b>, <b>SQL</b> e <b>Scikit-Learn</b> desde a limpeza de dados até modelos preditivos. Os resultado são apresentados em dashboard no <b>Power BI</b>, <b>Looker Studio</b> ou <b>Streamlit</b>, mas sempre começando com uma pergunta de negócio para entendimento do problema</p>
-									<p>Tambem tenho experiência com projetos ponta a ponta utilizando o <b>Claude Code</b> e agentes de IA no dia a dia de análise.</p>
+									<p>Sou <b>Guilherme Grandim</b>, Data Analyst e Data Scientist, com <b>Mestrado pela UNICAMP</b> e <b>MBA em Data Science pela USP</b>. Ao longo da carreira, o método científico moldou a forma como eu olho para um número: sempre levantando hipóteses antes de tirar qualquer conclusão.</p>
+									<p>Trabalho com <b>Python</b>, <b>SQL</b> e <b>Scikit-Learn</b>, da limpeza dos dados até os modelos preditivos. Os resultados viram dashboards em <b>Power BI</b>, <b>Looker Studio</b> ou <b>Streamlit</b>, mas o ponto de partida é sempre a pergunta de negócio.</p>
+									<p>Também tenho experiência em projetos ponta a ponta usando <b>Claude Code</b> e agentes de IA no dia a dia da análise.</p>
 								</div>
 							</div>
 						</section>
@@ -72,8 +71,8 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Experiências</h2>
-									<p>Trabalhei por anos com dados no esporte de alto rendimento em clubes como <b>Corinthians, Cruzeiro e Vasco</b>. Nesse ambiente aprendi a lidar com dado incompleto, prazo curto e stakeholder que precisam de respostas assertivas</p>
-									<p>Hoje trabalho com projetos de portfólio em dados reais e construção de soluções de <b>Business Intelligence</b>, onde o foco é entregar análise que de fato oriente uma decisão trasformando dados técnicos em liguagem acessivel e KPIs.</p>
+									<p>Trabalhei por anos com dados no esporte de alto rendimento, em clubes como <b>Corinthians, Cruzeiro e Vasco</b>. Aprendi a lidar com dado incompleto, prazo curto e stakeholders que precisam de resposta rápida e assertiva.</p>
+									<p>Hoje trabalho em projetos de portfólio com dados reais, construindo soluções de <b>Business Intelligence</b>. O foco é sempre entregar uma análise que realmente oriente uma decisão, traduzindo dado técnico em linguagem acessível e KPIs.</p>
 								</div>
 							</div>
 						</section>
@@ -150,7 +149,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Classificador de SRAG/COVID-19 com XGBoost e Deploy Serverless na AWS</h2>
-									<p>Neste projeto, desenvolvi um classificador multiclasse para Síndrome Respiratória Aguda Grave a partir dos dados epidemiológicos do SIVEP-Gripe (DATASUS), com engenharia de features de faixa etária, score de comorbidades, macrorregião, sazonalidade via seno/cosseno da semana epidemiológica e score vacinal. O modelo XGBoost, treinado com early stopping e pesos balanceados por classe, atingiu 68% de acurácia e F1-score ponderado de 0,67 no conjunto de teste. Diante da indisponibilidade de cota para endpoints do SageMaker, containerizei o modelo serializado em uma imagem Docker publicada no ECR e servida via AWS Lambda, consumida por um frontend em Streamlit publicado no ECS Fargate. Para manter o custo de infraestrutura próximo de zero, a arquitetura opera em modo scale-to-zero: o serviço ECS permanece com desiredCount=0 por padrão e é desligado automaticamente após 2 horas de uso via EventBridge. Também documentei de forma transparente uma limitação crítica do modelo: a feature mais preditiva, delta_uti, não possui documentação oficial no DATASUS, recomendando validação com os criadores do pipeline original antes de qualquer uso clínico.</p>
+									<p>Neste projeto, desenvolvi um classificador multiclasse para Síndrome Respiratória Aguda Grave a partir dos dados epidemiológicos do SIVEP-Gripe (DATASUS), com engenharia de features de faixa etária, score de comorbidades, macrorregião, sazonalidade via seno/cosseno da semana epidemiológica e score vacinal. O modelo XGBoost, treinado com early stopping e pesos balanceados por classe, atingiu 68% de acurácia e F1-score ponderado de 0,67 no conjunto de teste. Diante da indisponibilidade de cota para endpoints do SageMaker, containerizei o modelo serializado em uma imagem Docker publicada no ECR e servida via AWS Lambda, consumida por um frontend em Streamlit publicado no ECS Fargate. Para manter o custo de infraestrutura próximo de zero, a arquitetura opera em modo scale-to-zero: o serviço ECS permanece com desiredCount=0 por padrão e é desligado automaticamente após 2 horas de uso via EventBridge. Também documentei uma limitação crítica do modelo: a feature mais preditiva, delta_uti, não possui documentação oficial no DATASUS, recomendando validação com os criadores do pipeline original antes de qualquer uso clínico.</p>
 									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
 									<ul style="margin-top: 0; padding-left: 1.2em;">
 										<li>Python 3.11 (pandas, scikit-learn, XGBoost)</li>
@@ -197,12 +196,10 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Painel Estratégico de Negócios para Companhia de Videogame utilizando Streamlit</h2>
-									<p>Neste projeto, apliquei programação em Python, manipulação de dados e pensamento estratégico para desenvolver uma solução de inteligência 
-										de mercado para a BrasCo. Gaming Ltd. Utilizando Streamlit e GitHub, estruturei um dashboard interativo focado na otimização de capital 
-										dentro do setor global de games, mapeando KPIs de eficiência. A análise permitiu identificar que 37% do market share concentra-se 
-										na América do Norte e que parcerias com a Microsoft oferecem o melhor retorno sobre investimento ($0.32M por ponto).
-										Também foram detectadas janelas de oportunidade no 3º ano de vida dos consoles, fornecendo uma base estatística para mitigar 
-										riscos e direcionar o lançamento de novos títulos com precisão comercial.</p>
+									<p>Neste projeto, usei Python e Streamlit para construir um dashboard de inteligência de mercado para a BrasCo Gaming Ltd., focado em KPIs de
+										eficiência de capital no setor de games. A análise mostrou que 37% do market share está concentrado na América do Norte e que parcerias
+										com a Microsoft têm o melhor retorno sobre investimento ($0.32M por ponto). Também identifiquei uma janela de oportunidade no 3º ano de
+										vida dos consoles, útil para orientar o lançamento de novos títulos com menos risco.</p>
 									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
 									<ul style="margin-top: 0; padding-left: 1.2em;">
 										<li>Python</li>
