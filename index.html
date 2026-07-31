@@ -48,7 +48,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>👋 Olá, seja Bem-vindo(a) ao meu portifólio!</h1>
-																			<p>Esse é o meu portfólio de projetos de dados, onde reúno os trabalhos que fiz em Análise e Ciência de Dados. Aqui você encontra
+							<p>Esse é o meu portfólio de projetos de dados, onde reúno os trabalhos que fiz em Análise e Ciência de Dados. Aqui você encontra
 								desde a extração de dados até a criação de modelos preditivos e dashboards, sempre partindo de um problema de negócio real.</p>
 						</div>
 					</section>
@@ -145,6 +145,29 @@
 					<section id="three" class="wrapper style2 spotlights">
 
 						<section>
+							<a href="#" class="image"><img src="images/projeto05.png" alt="Previsão de vendas Rossmann Store Sales" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Previsão de Vendas para Rede de Farmácias com XGBoost e Bot no Telegram</h2>
+									<p>Neste projeto, desenvolvi um modelo de machine learning para prever o faturamento das próximas 6 semanas de cada uma das 1.115 lojas da rede Rossmann. O problema foi trazido pelo CFO da empresa, que precisava substituir estimativas manuais e inconsistentes dos gerentes por uma base estatística confiável para planejar um orçamento centralizado de reformas. Seguindo a metodologia CRISP-DS em 10 ciclos, o pipeline contemplou feature engineering com derivação de variáveis temporais e de competição, EDA com validação de 12 hipóteses de negócio, preparação com encoding cíclico (sin/cos), RobustScaler e Boruta para seleção de features. O XGBoost foi escolhido sobre o Random Forest por apresentar menor variância no cross-validation temporal e modelo serializado ~10x menor, crítico para a API com timeout restrito. O modelo final atingiu MAPE de ~13% e a previsão consolidada da rede ficou entre R$ 283,5 MM e R$ 285,2 MM para as 6 semanas. A solução foi colocada em produção com uma API Flask no Heroku e um bot no Telegram que permite ao CFO consultar a previsão de qualquer loja em segundos, digitando apenas o número da unidade.</p>
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python (pandas, numpy, scikit-learn, XGBoost, Flask)</li>
+										<li>Boruta (seleção de features)</li>
+										<li>Jupyter Lab</li>
+										<li>Heroku (deploy da API e do bot)</li>
+										<li>Telegram Bot API</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/rossmann_store_sales" class="button">Ver no GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
 							<a href="#" class="image"><img src="images/projeto06.png" alt="Classificador de Síndrome Respiratória Aguda Grave (SRAG/COVID-19)" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
@@ -163,29 +186,6 @@
 
 									<ul class="actions">
 										<li><a href="https://github.com/guigrandim/respiratory-diseases" class="button">Ver no GitHub</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<a href="#" class="image"><img src="images/projeto05.png" alt="Previsão de vendas Rossmann Store Sales" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Previsão de Vendas para Rede de Farmácias com XGBoost e Bot no Telegram</h2>
-									<p>Neste projeto, desenvolvi um modelo de machine learning para prever o faturamento das próximas 6 semanas de cada uma das 1.115 lojas da rede Rossmann. O problema foi trazido pelo CFO da empresa, que precisava substituir estimativas manuais e inconsistentes dos gerentes por uma base estatística confiável para planejar um orçamento centralizado de reformas. Seguindo a metodologia CRISP-DS em 10 ciclos, o pipeline contemplou feature engineering com derivação de variáveis temporais e de competição, EDA com validação de 12 hipóteses de negócio, preparação com encoding cíclico (sin/cos), RobustScaler e Boruta para seleção de features. O XGBoost foi escolhido sobre o Random Forest por apresentar menor variância no cross-validation temporal e modelo serializado ~10x menor, crítico para a API com timeout restrito. O modelo final atingiu MAPE de ~13% e a previsão consolidada da rede ficou entre R$ 283,5 MM e R$ 285,2 MM para as 6 semanas. A solução foi colocada em produção com uma API Flask no Heroku e um bot no Telegram que permite ao CFO consultar a previsão de qualquer loja em segundos, digitando apenas o número da unidade.</p>
-									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
-									<ul style="margin-top: 0; padding-left: 1.2em;">
-										<li>Python (pandas, numpy, scikit-learn, XGBoost, Flask)</li>
-										<li>Boruta (seleção de features)</li>
-										<li>Jupyter Lab</li>
-										<li>Heroku (deploy da API e do bot)</li>
-										<li>Telegram Bot API</li>
-										<li>Git e Github</li>
-									</ul>
-
-									<ul class="actions">
-										<li><a href="https://github.com/guigrandim/rossmann_store_sales" class="button">Ver no GitHub</a></li>
 									</ul>
 								</div>
 							</div>
@@ -212,6 +212,29 @@
 									<ul class="actions">
 										<li><a href="https://github.com/guigrandim/video_games_sales" class="button">Ver no GitHub</a></li>
 										<li><a href="https://brasco-videogames-sales.streamlit.app" class="button primary">Ver Projeto</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<a href="#" class="image"><img src="images/projeto07.png" alt="Análise de compras públicas de componentes elétricos" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Previsão de Gastos em Compras Públicas de Componentes Elétricos com XGBoost e Naive Bayes</h2>
+									<p>Neste projeto, construí um pipeline via API do ComprasNet para consolidar 164.680 registros de contratações públicas de componentes e condutores elétricos (CATMAT 59 e 61, entre 2021 e 2026) em um schema estrela no SQLite, atendendo a uma demanda da área de Suprimentos de uma distribuidora de energia que precisava negociar melhor com fornecedores e projetar o gasto do próximo exercício fiscal. A EDA testou 4 hipóteses estatísticas sobre elasticidade de preço, sazonalidade e concentração de fornecedores, e para a projeção trimestral do gasto comparei três modelos: naive sazonal, XGBoost e Naive Bayes. A segmentação de itens por elasticidade apontou uma economia potencial de R$492 milhões (≈31% do gasto total); a sazonalidade de janeiro e fevereiro se mostrou orçamentária, não de mercado; e as compras irregulares apresentaram maior dependência de fornecedor único (ρ=-0,458). Para 2027, a projeção de gasto ficou em ≈R$368,4 milhões, com o modelo naive sazonal superando o XGBoost (MAPE de 17,6% contra 20,0%).</p>
+									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
+									<ul style="margin-top: 0; padding-left: 1.2em;">
+										<li>Python (pandas, XGBoost, scikit-learn)</li>
+										<li>API do ComprasNet</li>
+										<li>SQLite (schema estrela)</li>
+										<li>Streamlit</li>
+										<li>Git e Github</li>
+									</ul>
+
+									<ul class="actions">
+										<li><a href="https://github.com/guigrandim/eletric_supply" class="button">Ver no GitHub</a></li>
+										<li><a href="https://eletricsupply.streamlit.app" class="button primary">Ver Projeto</a></li>
 									</ul>
 								</div>
 							</div>
@@ -251,15 +274,15 @@
 										entre underfitting e overfitting de vários algoritmos de Machine Learning dentro das tarefas de classificação,
 										regressão e agrupamento através de um ensaio de Machine Learning. O resultado final desse projeto foi um painel
 										mostrando a performance desses algoritmos de Machine Learning, a partir das variações dos valores dos principais
-										parâmetros de cada algoritimo, que controlam o estado de overfitting e underfitting
+										parâmetros de cada algoritmo, que controlam o estado de overfitting e underfitting.
 									</p>
 									<p style="margin-bottom: 0;">As Ferramentas utilizadas no Projeto foram:</p>
 									<ul style="margin-top: 0; padding-left: 1.2em;">
 										<li>Python e Scikit-learn</li>
-										<li>Algoritimos de Classificação: KNN, Decision Tree, Random Forest e Logistic Regression</li>
-										<li>Algoritimos de Regressão: Linear Regression ( Lasso, Ridge, ElasticNet), Polynomial (Lasso, Ridge, ElasticNet), 
-											Decision Tree, Random Forest, XGBoost, LightGBM </li>
-										<li>Algoritimos de Agrupamento: K-Means e Affinity Propagation </li>
+										<li>Algoritmos de Classificação: KNN, Decision Tree, Random Forest e Logistic Regression</li>
+										<li>Algoritmos de Regressão: Linear Regression (Lasso, Ridge, ElasticNet), Polynomial (Lasso, Ridge, ElasticNet),
+											Decision Tree, Random Forest, XGBoost, LightGBM</li>
+										<li>Algoritmos de Agrupamento: K-Means e Affinity Propagation</li>
 										<li>Métricas de Performance: Accuracy, Precision, Recall e F1-Score, R², MSE, RMSE, MAE, MAPE e Silhouette Score</li>
 									</ul>
 
