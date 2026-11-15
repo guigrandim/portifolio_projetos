@@ -39,7 +39,7 @@ O público é formado por empresas e decisores que precisam entender melhor seus
 
 - **Paleta:** fundo `#0A0E14`, superfícies `#0E131A` e `#141922`, ciano `#22D3EE`, laranja `#F97316`, texto `#F1F5F9` e texto secundário `#94A3B8`, derivada do tema do Stitch.
 - **Tipografia:** Space Grotesk para títulos e IBM Plex Sans para texto, com monoespaçada de sistema nos rótulos técnicos. Fontes locais evitam uma dependência externa em tempo de execução.
-- **Layout:** navegação lateral fixa no desktop e barra compacta com navegação horizontal no celular; abertura em duas colunas com proposta comercial e painel do case de compras públicas; serviços, cases em grade, stacks agrupadas, experiência e contato.
+- **Layout:** cabeçalho fixo no topo com um menu vertical que abre em um painel de botões; a mesma navegação funciona no celular. A página mantém a abertura em duas colunas com proposta comercial e painel do case de compras públicas, seguida por serviços, cases em grade, stacks, experiência e contato.
 - **Princípio de composição:** ciano sinaliza estrutura e informação técnica; laranja destaca CTAs e resultados de negócio. O destaque de ROI sempre informa se o número é potencial, previsto, observado ou não calculado.
 - **Acessibilidade e movimento:** bom contraste, foco de teclado visível, navegação sem depender de animação e respeito a `prefers-reduced-motion`.
 

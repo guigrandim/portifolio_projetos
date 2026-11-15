@@ -41,7 +41,7 @@
 - Uses semantic `header`, `nav`, `main#page-content`, section, and `footer` elements.
 - Preserves all existing contact, social, project repository, and demo URLs.
 
-- [x] **Step 1: Implement Stitch navigation** as a fixed desktop sidebar and compact mobile header with links to Início, Serviços, Cases, Habilidades, Sobre, and Contato plus a clear contact CTA; keep semantic `header`, `nav`, `main#page-content`, sections, and `footer` elements.
+- [x] **Step 1: Implement Stitch navigation** as a fixed top header with a vertical dropdown panel of button-styled links to Início, Serviços, Cases, Habilidades, Sobre, and Contato plus a clear contact CTA; keep semantic `header`, `nav`, `main#page-content`, sections, and `footer` elements.
 - [x] **Step 2: Rewrite the hero copy** with the headline “Transformo dados em decisões que movem o negócio.”, a short description of the analytics offer, a “Vamos conversar” CTA, and a “Ver cases” anchor link; place the content in `.section-inner` and `.hero-layout` wrappers.
 - [x] **Step 3: Add a data-backed evidence panel** with the `.evidence-panel` hook for the public procurement case: show 164,680 records, four hypotheses tested, and “R$ 492 milhões em economia potencial estimada”; label the metric as potential, not realized savings. Represent the API → consolidated dataset → forecast flow without drawing a fabricated time series.
 - [x] **Step 4: Add three client-facing service summaries** for Analytics e BI, Análise e modelagem preditiva, and Produtos e pipelines de dados inside `.service-list`, with tooling mentioned only as supporting detail.
