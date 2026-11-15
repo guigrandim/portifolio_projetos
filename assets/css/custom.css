@@ -1145,7 +1145,7 @@ section {
 .method-list {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 1rem;
+	gap: 1.5rem 1rem;
 	padding: 0;
 	margin: 0;
 	list-style: none;
